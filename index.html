@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti</title>
+
+    <style>
+
+.jumbotron{
+	background-image: url('indexBeach.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+body{
+	background-image: url('indexSand.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+} 
+
+.img-thumbnail{
+    width: 600px; /* You can set the dimensions to whatever you want */
+    height: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .img-thumbnail{
+    width: 100%; /* You can set the dimensions to whatever you want */
+    height: 50%;
+}
+
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  /* width: 100%; */
+  /* height: auto; */
+  transition: .7s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.shadow-sm:hover .image {
+  opacity: 0.7;
+}
+
+.shadow-sm:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  border-radius: 25px;
+  background-color: #add8e6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+    </style>
+</head>
+<body data-gr-c-s-loaded="true">
+    <script src="js/jquery.min.js"></script>   
+    <script src="js/bootstrap.min.js"></script>    
+        <header>
+<nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbarCustomLine" href="index.html">Taniti</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="lodging.html">Lodging</a></li>
+              <li><a href="transp.html">Transportation</a></li>
+              <li><a href="business.html">Business</a></li>
+              <li><a href="entert.html">Entertainment</a></li>
+              <li><a href="contact.html">Contact/FAQ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+</header>
+    
+
+    <main role="main">
+
+      
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="mainText">Welcome to Taniti </h1>
+          <p class="lead text-muted"></p>
+          <p>
+          </p>
+        </div>
+      </section>
+    
+    </div>
+        <div class="container">
+    
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <a href="lodging.html"> 
+                  <img  src="indexHotel.jpg" class="img-fluid img-thumbnail float-left image" alt="Lodging-image"/>
+                </a>
+                <div class="card-body middle">
+                  <p class="card-text text"> You can find more information about hotels on our friendly island </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="lodging.html">Lodging</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <p class="card-text text-center secondaryText " style="font-size: 20px;"> <bold>Hotels</bold> </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <a href="transp.html"> 
+                  <img  src="indexTransp.jpg"  class="img-fluid img-thumbnail float-right image" alt="Lodging-image"/>
+                </a>
+                <div class="card-body middle">
+                  <p class="card-text text"> Learn more about our transportation options.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="transp.html">Transportation</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <p class="card-text text-center secondaryText " style="font-size: 20px;"> <bold>Transportation</bold> </p>
+                </div>
+              </div>
+            </div>
+
+          </row>
+        <row>
+
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <a href="business.html"> 
+                <img  src="indexBusiness.jpg"  class="img-fluid img-thumbnail float-left image" alt="Lodging-image"/>
+              </a>
+              <div class="card-body middle">
+                <p class="card-text text"> Learn more about our business options </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="business.html">Business</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ">
+                <p class="card-text text-center secondaryText " style="font-size: 20px;"> <bold>Business</bold> </p>
+              </div>
+            </div>
+          </div>
+
+    
+          <div class="col-md-6">
+            <div class="card mb-4 shadow-sm">
+              <a href="entert.html"> 
+                <img  src="indexEntertainment.jpg" class="img-fluid img-thumbnail float-right image" alt="Lodging-image"/>
+              </a>
+              <div class="card-body middle">
+                <p class="card-text text"> Learn more about our entertainment options.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="entert.html">Entertainment</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body ">
+                <p class="card-text text-center secondaryText " style="font-size: 20px;"> <bold>Entertainment</bold> </p>
+              </div>
+            </div>
+          </div>
+
+
+          </row>
+
+          
+          <div class="row">
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <a href="contact.html"> 
+                  <img  src="indexContactUs.png" width="550" height="200" class="img-fluid img-thumbnail float-right image" alt="Lodging-image"/>
+                </a>
+                <div class="card-body middle">
+                  <p class="card-text text"> Contact us if you would like to find out more about our amazing island.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="entert.html">Contact/FAQ</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <p class="card-text text-center secondaryText " style="font-size: 20px;"> <bold>Contact/FAQ</bold> </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3"></div>
+
+          
+
+    
+
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="footer">
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand navbarCustomLine" href="#">Taniti  <i>2020 ©</i></a>
+        
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            Where dreams come through! 
+          </div>
+
+          <div class="col-md-1">
+            Follow us on: <br>
+            <span><a href="#"> Instagramm 📸</a></span>
+            <span><a href="#"> Twitter 🐦</a></span>
+          
+          </div>
+          <div class="col-md-1">
+         
+          
+          </div>
+
+        </div>
+
+    </nav>
+  </footer>
+    </div>
+    
+</body>
+</html>

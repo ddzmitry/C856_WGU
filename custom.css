@@ -1,0 +1,89 @@
+@font-face {
+    font-family: LoveFont;
+    src: url(FontsFree-Net-Modern1.ttf);
+  }
+
+  @font-face {
+    font-family: Oswald;
+    src: url(Oswald-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: Satisfy;
+    src: url(Satisfy-Regular.ttf);
+  }
+  @font-face {
+    font-family: Tillium;
+    src: url(TitilliumWeb-Regular.ttf);
+  }
+
+.mainText {
+    font-family: LoveFont;
+}
+
+.navbarCustomLine {
+  font-family: LoveFont;
+
+}
+.footer-logo {
+  font-family: LoveFont;
+  text-align: center;
+}
+
+.secondaryText {
+  font-family: Oswald;
+
+}
+/* secondaryText */
+
+
+/* Entertaiment */
+
+.containerEntertaiment {
+  position: relative;
+  width: 50%;
+}
+
+.imageEntertaiment {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middleEntertaiment {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerEntertaiment:hover .image {
+  opacity: 0.3;
+}
+
+.containerEntertaiment:hover .middle {
+  opacity: 1;
+}
+
+.textEntertaiment {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.navbar{
+  background-color: #e3f2fd;
+  font-family: Satisfy;
+}
+
+body{
+  font-family: Tillium;
+}
